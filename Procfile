@@ -1,1 +1,1 @@
-web: superset runserver
+web: superset run -p $PORT --debugger
