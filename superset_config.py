@@ -4,7 +4,8 @@ import os
 # ---------------------------------------------------------
 # ROW_LIMIT = 5000
 SUPERSET_WORKERS = 1  # for it to work in heroku basic/hobby dynos increase as you like
-SUPERSET_WEBSERVER_PORT = 8088
+SUPERSET_WEBSERVER_PORT = os.environ['PORT']
+print("Deneme:", SUPERSET_WEBSERVER_PORT)
 # ---------------------------------------------------------
 MAPBOX_API_KEY = os.getenv('MAPBOX_API_KEY')
 
